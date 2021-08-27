@@ -1,0 +1,146 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.video-container {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  background-color: black;
+}
+
+video {
+  height: 100%;
+  width: 100%;
+}
+
+#record,
+#capture {
+  position: fixed;
+  right: 2rem;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  border: none;
+  background-color: black;
+  border: 5px solid white;
+  z-index: 3;
+}
+
+#record {
+  top: 35vh;
+}
+
+#capture {
+  top: 50vh;
+}
+
+.record-button-div,
+.capture-button-div {
+  height: 80%;
+  width: 100%;
+  border-radius: 50%;
+}
+
+.record-button-div {
+  background-color: red;
+}
+
+.capture-button-div {
+  background-color: white;
+}
+
+.capture-animation {
+  animation: anim 0.8s;
+}
+
+.record-animation {
+  animation: anim 1s infinite;
+}
+
+@keyframes anim {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.filter-container {
+  height: 24rem;
+  width: 5rem;
+  position: fixed;
+  left: 4rem;
+  top: calc((100vh - 24rem) / 2);
+  background-color: red;
+  z-index: 3;
+}
+
+.filters {
+  width: 100%;
+  border: 2px solid white;
+  height: 4rem;
+  background: url("https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=750&q=80");
+  background-size: cover;
+  background-blend-mode: soft-light;
+}
+
+.zoom-in-out-container {
+  height: 9rem;
+  width: 4rem;
+  position: fixed;
+  right: 2rem;
+  top: 2rem;
+  z-index: 3;
+}
+
+.zoom-in-out-container div {
+  width: 100%;
+  height: 50%;
+  color: white;
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+  background-color: rgb(29, 21, 70);
+}
+
+.zoom-in-out-container div:hover,
+.gallery-container:hover,
+.filters:hover,
+#record:hover,
+#capture:hover {
+  cursor: pointer;
+}
+
+.filter-div {
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+}
+
+.gallery-container {
+  width: 4rem;
+  height: 4rem;
+  position: fixed;
+  right: 2rem;
+  bottom: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(29, 21, 70);
+  z-index: 3;
+}
+
+.material-icons {
+  color: white;
+  font-size: 2.75rem;
+}

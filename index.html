@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Camera</title>
+</head>
+
+<body>
+
+    <div class="video-container">
+        <video autoplay style="transform: scale(1);"></video>
+    </div>
+    <button id="record">
+        <div class="record-button-div"></div>
+    </button>
+    <button id="capture">
+        <div class="capture-button-div"></div>
+    </button>
+    <div class="filter-container">
+        <div class="filters" style="background-color: rgba(238, 130, 238, 0.2);"></div>
+        <div class="filters" style="background-color: rgba(76, 0, 130, 0.2);"></div>
+        <div class="filters" style="background-color: rgba(0, 0, 255, 0.2);"></div>
+        <div class="filters" style="background-color: rgba(0, 128, 0, 0.2);"></div>
+        <div class="filters" style="background-color: rgba(255, 255, 0, 0.2);"></div>
+        <div class="filters"></div>
+    </div>
+    <div class="zoom-in-out-container">
+        <div class="zoom-in">+</div>
+        <div class="zoom-out">-</div>
+    </div>
+
+    <!-- <div class="gallery-container">
+        <span class="material-icons">
+            collections
+        </span>
+    </div> -->
+    <!-- <script src="./dbScript.js"></script> -->
+    <script src="./script.js"></script>
+</body>
+
+</html>
